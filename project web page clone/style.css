@@ -1,0 +1,209 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: metropolis;
+}
+
+body{
+    background-image: url("./Assets/background-image.png");
+    background-position:bottom;;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 1%;
+    box-sizing: border-box;
+}
+
+/* navigation bar */
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px 0px;
+    height: 10vh;
+}
+
+.nav-mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 90%;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+.nav-right button{
+    background-color: rgb(231, 19, 132);
+    border: none;
+    padding: 5px 8px ;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Main section */
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7%;
+    height: fit-content;
+}
+
+/* main left */
+.main-left{
+    position: relative;
+    width: 35%;
+}
+.main-left-main-content{
+    font-size: 65px;
+    font-weight: bold;
+}
+.main-left-sub-content{
+    color: rgb(99, 95, 95);
+    font-size:1.4em;
+    padding-top: 5%;
+    width: 85%;
+}
+.main-left-buttons{
+    display: flex;
+    padding-top: 5%;
+    width: 70%;
+    gap: 5%;
+}
+.main-left-buttons .button1{
+    background-color: rgb(231, 19, 132);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+.main-left-buttons .button2{
+    background-color: white;
+    padding: 10px 25px;
+    border: 1px solid rgb(231, 19, 132);
+    border-radius: 5px;
+    color: rgb(231, 19, 132);
+    text-transform: uppercase;
+}
+.main-left-tags{
+    padding-top: 5%;
+    display: flex;
+    gap: 2%;
+    font-size: larger;
+}
+
+.main-right {
+    position: relative;
+    width: 65%;
+    /* right: -20%; */
+    
+}
+.carloan-section{
+    width: 110px;
+    padding: 1%;
+    min-width: 100px;
+    border-radius: 50px;
+    box-shadow: 1px 2px 20px gray;
+    padding: 10px 15px;
+    position: absolute;
+    top: 5%;
+}
+.carloan-section button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    gap: 5%;
+}
+.homeloan-section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 125px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 30px;
+    right: 8%;
+    top: 25%;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 10px 10px 50px grey;
+    
+}
+
+.hero-image {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-position: center;
+    }
+    .main-section {
+        padding-top: 5%;
+        flex-direction: column-reverse;
+        gap: 10px;
+        margin: 0 10%;
+    
+    }
+    .main-right {
+        width: 100%
+    }
+    .main-left {
+        width: 100%;
+      text-align: center;
+      
+    }
+    .main-left-tags {
+        width: 100%;
+        justify-content: center;    
+    }
+    
+    .carloan-section {
+        top: 0;
+        left: 5%;
+    }
+    .homeloan-section {
+        right: 0;
+    }
+    .nav-mid {
+        display: none;
+       
+    }
+    .main-left-buttons{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .carloan-section {
+        left: -10px;
+        width: 95px;
+    }
+    .homeloan-section {
+        width: 110px;
+        right: -25px;
+    }
+   
+}
+
+/* @media screen and (max-width: 970px) {
+    .hero-image img {
+        padding-top: 10%;
+    }
+} */
